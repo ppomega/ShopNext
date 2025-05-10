@@ -31,7 +31,7 @@ function Filter({ setFilter, darkMode }) {
       initial={{ scale: 0, x: -470 }}
       animate={{ scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="h-1/3 z-10 w-[550px] bg-[url('/bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('/bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
+      className="h-1/3 z-10 w-[560px] bg-[url('/bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('/bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
     >
       <svg
         onClick={() => {
@@ -112,13 +112,13 @@ function Filter({ setFilter, darkMode }) {
           </li>
         </ul>
       </div>
-      <div className="dark:text-black w-[550px] px-2 h-1/2 mx-5 shadow-2xl text-red-500 bg-white rounded-md">
+      <div className="dark:text-black w-[560px] px-2 h-1/2 mx-5 shadow-2xl text-red-500 bg-white rounded-md">
         <h3>Price less than ₹{price}</h3>
         <input
           onChange={handlePriceChange}
           type="range"
           id="range"
-          className="h-1 rounded-2xl"
+          className="h-1 px-6 rounded-2xl"
           min="120"
           max="1500"
         />
