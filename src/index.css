@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: Quantum;
+  src: url("./Quantum.otf");
+}
+@font-face {
+  font-family: Ragland;
+  src: url("./Ragland.otf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("./Inter-Medium.otf");
+}
+@font-face {
+  font-family: Integral;
+  src: url("./Integral.ttf");
+}
+@theme {
+  --font-quant: Quantum;
+  --font-rag: Ragland;
+  --font-inter: Inter;
+  --font-integral: Integral;
+}
