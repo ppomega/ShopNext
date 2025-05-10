@@ -1,5 +1,5 @@
 import Card from "./card";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Cover from "./cover";
 import { AnimatePresence, motion } from "framer-motion";
@@ -9,12 +9,13 @@ function Main({ Carthandler, filter }) {
   const [page, setPage] = useState(1);
   const [totalpages, setLength] = useState(0);
   useEffect(() => {
+    setProducts([]);
     axios
       .post(import.meta.env.VITE_SERVER + "/fetchProducts/0", filter)
       .then((response) => {
+        setPage(1);
         setProducts(response.data.content);
         setLength(response.data.totalPages);
-        setPage(1);
       });
   }, [filter]);
 

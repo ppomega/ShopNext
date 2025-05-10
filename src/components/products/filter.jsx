@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, useAnimate } from "motion/react";
-
+import "../../index.css";
 function Filter({ setFilter, darkMode }) {
   const [categories, setCategories] = useState([]);
   const [price, setPrice] = useState(1500);
@@ -31,7 +31,7 @@ function Filter({ setFilter, darkMode }) {
       initial={{ scale: 0, x: -470 }}
       animate={{ scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="h-1/3 z-10 w-full bg-[url('/bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('/bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
+      className="h-1/3 z-10 w-[550px] bg-[url('/bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('/bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
     >
       <svg
         onClick={() => {
@@ -40,7 +40,7 @@ function Filter({ setFilter, darkMode }) {
         fill={darkMode ? "#ffffff" : "#000000"}
         xmlns="http://www.w3.org/2000/svg"
         stroke={darkMode ? "#ffffff" : "#000000"}
-        className="absolute top-0 left-0 m-4 cursor-pointer"
+        className="absolute top-0 w-1/6 h-1/6 left-0 m-4 cursor-pointer"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
@@ -67,7 +67,7 @@ function Filter({ setFilter, darkMode }) {
         </g>
       </svg>
 
-      <div className="flex dark:text-white px-4">
+      <div className="flex dark:text-white px-3">
         <h3>Category</h3>
         <ul className="flex flex-col ml-4">
           <li className="flex items-center">
@@ -112,13 +112,14 @@ function Filter({ setFilter, darkMode }) {
           </li>
         </ul>
       </div>
-      <div className="dark:text-black w-1/2 px-3 h-1/2 mx-5 shadow-2xl text-red-500 bg-white rounded-md">
-        <h3>Price Range</h3>
+      <div className="dark:text-black w-[550px] px-2 h-1/2 mx-5 shadow-2xl text-red-500 bg-white rounded-md">
+        <h3>Price less than ₹{price}</h3>
         <input
           onChange={handlePriceChange}
           type="range"
+          id="range"
           className="h-1 rounded-2xl"
-          min="0"
+          min="120"
           max="1500"
         />
       </div>
@@ -127,7 +128,7 @@ function Filter({ setFilter, darkMode }) {
           animate(document.querySelector("#filter"), { x: 0 });
         }}
         fill={darkMode ? "#ffffff" : "#000000"}
-        className="absolute top-0 left-[450px] m-4 cursor-pointer"
+        className="absolute top-0 left-[480px] m-4 cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
         stroke={darkMode ? "#ffffff" : "#000000"}
       >
