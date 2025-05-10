@@ -33,7 +33,7 @@ const Login = ({ setUsertype, setIsLoggedIn, setUser }) => {
       });
   };
   return (
-    <div className="flex h-[1000px] items-center justify-center bg-[url('bg.jpg')] bg-cover bg-no-repeat dark:bg-[url('bgdark.png')] min-h-screen ">
+    <div className="flex h-[1000px] items-center justify-center bg-[url('/bg.jpg')] bg-cover bg-no-repeat dark:bg-[url('/bgdark.png')] min-h-screen ">
       <div className="w-full relative bottom-28  max-w-md p-8 space-y-6 bg-[url('bg.jpg')] bg-cover dark:bg-[url('bgdark.png')] dark:bg-cover rounded-lg shadow-2xl">
         <h2 className="text-2xl font-bold text-center dark:text-white text-gray-800">
           Login

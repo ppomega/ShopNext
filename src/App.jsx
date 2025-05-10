@@ -43,7 +43,7 @@ function App() {
     }
   }, [darkMode]);
   return (
-    <div className="h-[1000px] font-inter  relative top-0 bg-[url('bg.jpg')]  dark:bg-none dark:bg-black ">
+    <div className="h-[1000px] font-inter  relative top-0 bg-[url('/bg.jpg')]  dark:bg-none dark:bg-black ">
       <BrowserRouter>
         <RouteChangeListener setL={setL} />
         <Navbar

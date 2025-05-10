@@ -20,7 +20,7 @@ function Card({ product, Carthandler }) {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="w-full h-full relative top-0 dark:bg-[url('bgdark.jpg')] dark:bg-cover   bg-cover rounded-lg bg-[url('bg.avif')] "
+      className="w-full h-full relative top-0 dark:bg-[url('/bgdark.jpg')] dark:bg-cover   bg-cover rounded-lg bg-[url('/bg.avif')] "
       onClick={() => {
         navigate("/product", { state: { product } });
       }}
@@ -54,7 +54,7 @@ function Card({ product, Carthandler }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="w-full bg-[url('bg.avif')] bg-cover dark:bg-[url('bgdark.jpg')] dark:bg-cover h-full flex absolute rounded-lg opacity-90 bottom-0  justify-between font-white"
+              className="w-full bg-[url('/bg.avif')] bg-cover dark:bg-[url('/bgdark.jpg')] dark:bg-cover h-full flex absolute rounded-lg opacity-90 bottom-0  justify-between font-white"
             />
             <motion.button
               initial={{ scale: 0 }}

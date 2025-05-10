@@ -31,7 +31,7 @@ function Filter({ setFilter, darkMode }) {
       initial={{ scale: 0, x: -470 }}
       animate={{ scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="h-1/3 z-10 w-full bg-[url('bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
+      className="h-1/3 z-10 w-full bg-[url('/bg.jpg')] dark:bg-cover dark:bg-no-repeat dark:bg-[url('/bgdark.png')] bg-cover sticky top-28 rounded-md px-16 shadow-black flex bg-white shadow-lg p-4 "
     >
       <svg
         onClick={() => {

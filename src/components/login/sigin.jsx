@@ -26,7 +26,7 @@ function SignIn({ setUsertype, setIsLoggedIn, setUser, prev }) {
       });
   }
   return (
-    <div className="flex h-[1000px] py-6 items-center bg-[url('bg.jpg')] dark:bg-cover dark:bg-[url('bgdark.png')] bg-cover justify-center min-h-screen bg-gray-100">
+    <div className="flex h-[1000px] py-6 items-center bg-[url('/bg.jpg')] dark:bg-cover dark:bg-[url('/bgdark.png')] bg-cover justify-center min-h-screen bg-gray-100">
       <div className="w-full  relative bottom-24  max-w-md dark:bg-[url('bgdark.png')] dark:bg-cover bg-[url('bg.jpg')] bg-cover p-8 space-y-6 rounded-lg shadow-2xl">
         <h2 className="text-2xl dark:text-white font-bold darK:text-white text-center text-gray-800">
           Sign In
